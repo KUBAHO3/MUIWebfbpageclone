@@ -5,7 +5,7 @@ function Feed() {
     
 
     return (
-        <Box bgcolor={'pink'} flex={4} p={2} sx={{display: {xs: "none",md: "block"}}}>
+        <Box bgcolor={'pink'} flex={4} p={2} >
            Feed 
         </Box>
     )

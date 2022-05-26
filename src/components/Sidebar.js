@@ -5,7 +5,7 @@ function Sidebar() {
     
 
     return (
-        <Box bgcolor={'skyblue'} flex={1} p={2}>
+        <Box bgcolor={'skyblue'} flex={1} p={2} sx={{display: {xs: "none",md: "block"}}}>
            Slidebar 
         </Box>
     )
