@@ -27,14 +27,17 @@ function Navbar() {
     const [open, setOpen] = useState(false)
 
     return (
-        <AppBar position='stick'>
+        <AppBar position='sticky'>
           <StyledToolbar>
             <Typography variant='h6' sx={{display:{xs:"none", sm:"block"}}}>
               HEAVEN Li
             </Typography>
             <AutoAwesomeIcon sx={{display:{xs:"block", sm:"none"}}}/>
             <Search>
-              <InputBase placeholder='Search...'  inputProps={{ 'aria-label': 'search' }}></InputBase>
+            <InputBase
+              placeholder="Search…"
+              inputProps={{ 'aria-label': 'search' }}
+            />
             </Search>
             <Icons>
             <Badge badgeContent={4} color="error" sx={{display:{xs:"none", sm:"block"}}}>
@@ -43,9 +46,9 @@ function Navbar() {
             <Badge badgeContent={4} color="error" sx={{display:{xs:"none", sm:"block"}}}>
               <Notifications />
             </Badge>
-            <Avatar alt="Heaven Linne" sx={{width:30, height:30, display:{xs:"none", sm:"block"}}} src="/static/images/avatar/1.jpg" onClick={e=>setOpen(true)}/>
+            <Avatar alt="Heaven Linne" sx={{width:30, height:30, display:{xs:"none", sm:"block"}}} src="https://i.scdn.co/image/ab6761610000e5ebc0cb9ac631e176caf39c080d" onClick={e=>setOpen(true)}/>
             <UserBox sx={{display:{ xs:"block", sm:"none"}}} onClick={e=>setOpen(true)}><UserBox>
-              <Avatar alt="Heaven Linne" sx={{width:30, height:30}} src="/static/images/avatar/1.jpg" />
+              <Avatar alt="Heaven Linne" sx={{width:30, height:30}} src="https://i.scdn.co/image/ab6761610000e5ebc0cb9ac631e176caf39c080d" />
               <Typography variant='h6'>Linne</Typography>
             </UserBox>
             </UserBox>
